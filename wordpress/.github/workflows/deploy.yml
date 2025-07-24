@@ -22,7 +22,7 @@ jobs:
         FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
       run: |
-        lftp -f "
+       lftp -f "
           open ftp://$FTP_USERNAME:$FTP_PASSWORD@$FTP_HOST
-          mirror --reverse --delete --verbose ./ /public_html/
+          mirror --reverse --delete --verbose ./ /htdocs/
         "
