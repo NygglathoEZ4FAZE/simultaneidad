@@ -1,0 +1,18 @@
+# Ignorar WordPress core
+/wp-admin/
+/wp-includes/
+index.php
+readme.html
+license.txt
+
+# Ignorar configuraciones locales
+wp-config.php
+wp-content/uploads/
+.htaccess
+
+# Ignorar archivos de sistema
+*.log
+*.sql
+*.zip
+.DS_Store
+Thumbs.db
