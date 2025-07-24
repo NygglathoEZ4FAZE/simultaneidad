@@ -100,3 +100,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+
+/*servidor fpt github*/
+define('DB_USER', 'if0_39552019');
+define('DB_PASSWORD', '6EAtJEG3NJj1yA');
+define('DB_HOST', 'http://www.simultaniedad.free.nf/');
