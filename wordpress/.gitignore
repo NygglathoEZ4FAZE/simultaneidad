@@ -1,18 +1,30 @@
-# Ignorar WordPress core
-/wp-admin/
-/wp-includes/
-index.php
-readme.html
-license.txt
-
-# Ignorar configuraciones locales
-wp-config.php
-wp-content/uploads/
-.htaccess
-
-# Ignorar archivos de sistema
+# Ignora archivos de sistema
 *.log
 *.sql
 *.zip
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Ignora uploads (opcional, si los manejas desde el servidor)
+wp-content/uploads/
+
+# Ignora configuraciones locales (puedes versionarlo si lo necesitas en producción)
+wp-config-local.php
+wp-config-sample.php
+
+# Ignora archivos de entorno
+.env
+
+# Ignora IDEs y editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Ignora node/npm si usas herramientas modernas en tu tema
+node_modules/
+npm-debug.log
+package-lock.json
+yarn.lock
